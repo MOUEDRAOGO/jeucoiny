@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8" />
+        <title>COINY V2- Marc OUEDRAOGO - jeu multijoueurs- developpeur Web Javascript</title>
+        <link rel="stylesheet" href="/css/cssCoiny.css" />
+        <script src="/js/constructeurCoiny.js"></script>
+
+        <script src="/js/mainJeuCoiny.js"></script>
+        <script src="/js/tresorJeu.js"></script>
+
+        <script src="/socket.io/socket.io.js"></script>
+
+
+        <!-- <audio id="audio" controls autoplay loop>
+            <source src="../public/Assets/musique/sonBulles.mp3" type="audio/mpeg"> format de musique non supporté !
+            </audio> -->
+    </head>
+
+    <body id="body">
+        <div id="background">
+
+            <div id="menuJeu">
+
+                <div id="boutonInterrogation">
+                    <img src="/Assets/UI/boutonInterrogation.png" alt="Règles du jeu"> </div>
+
+                <div id="boutonRejouer">
+                    <img src="/Assets/UI/boutonRejouer.png" alt="Rejouer"> </div>
+
+                <div id="tempsRestant"></div>
+
+                <div id="menuHighScores">
+                    <img src="/Assets/UI/boutonHighScores.png" alt="Règles du jeu"> </div>
+
+
+                <div id="CV">
+                    <a href="/Assets/CV/Marc_OUEDRAOGO_Developpeur_Web_Javascript.pdf" target="_blank">CV</a>
+                </div>
+
+
+                <div id="scoreCoiny1">0</div>
+                <div id="scoreCoiny2">0</div>
+            </div>
+
+        </div>
+
+
+        <div id="regleJeu">
+            <img src="/Assets/UI/regleJeu.png" alt="regleJeu">
+        </div>
+
+        <!-- choisir Coiny -->
+        <div id="choisirCoiny">
+
+            <div id="choixCoiny1">
+                <p>
+                <!-- <img src="/Assets/images/Shark/avatarCoiny1.png" alt="avatarCoiny1"> -->
+                </p>
+                <p>
+                <input type="submit" value="CHOISIR">
+                </p>
+            </div>
+
+            <div id="choixCoiny2">
+                <p>
+                <!-- <img src="/Assets/images/Shark/avatarCoiny2.png" alt="avatarCoiny2"> -->
+                </p>
+                <p>
+                <input type="submit" value="CHOISIR">
+                </p>
+            </div>
+        </div>
+        <!--  -->
+
+        <!-- formulaire saisie pseudo et mdp Coiny1-->
+        <div id="overlayPseudo">
+            <div id="divPseudoCoiny1">
+                <form id="formPseudoCoiny1">
+                    <p>Pseudo :
+                    <input id="pseudoCoiny1" type="text" />
+                    </p>
+                    <p>
+                    <input type="submit" value="JOUER">
+                    </p>
+                </form>
+            </div>
+        </div>
+        <!--  -->
+
+        <!-- Erreur pseudo -->
+        <div id="erreurPseudo">
+            <p> Ce pseudo est deja utilisé, veuillez en saisir un autre</p>
+        </div>
+        <!--  -->
+
+        <!-- fenetre compte a rebours jeu-->
+
+        <div id="compteARebours"> 
+            En attente autre joueurs...
+        </div>
+        <!--  -->
+
+        <!-- sprite Coiny1 -->
+        <div id="Coiny1Container">
+            <img id="CoinyContenu" src="/Assets/images/Gold_Coin_PNG_Clipart-663.png" />
+        </div>
+        <!--  -->
+
+        <!-- sprite Coiny2 -->
+        <div id="Coiny2Container">
+            <img id="Coiny2Contenu" src="/Assets/images/Gold_Coin_PNG_Clipart-663.png" />
+        </div>
+        <!--  -->
+
+        <!-- fenetre win -->
+        <div id="win">
+            <img src="/Assets/UI/Gagne.png" alt="">
+        </div>
+        <!--  -->
+
+        <!--  fenetre gameover-->
+        <div id="gameover">
+            <img src="/Assets/UI/Perdu.png" alt="">
+        </div>
+        <!--  -->
+
+        <!-- image tresor -->
+        </div>
+        <div id="treisureContainer">
+            <a href="/Assets/CV/Marc_OUEDRAOGO_Developpeur_Web_Javascript.pdf" target="_blank">
+                <img id="treisureContenu" class="treisureContenu" src="/Assets/images/Tresor/spritesheetTreisureChest.png" />
+            </a>
+        </div>
+        <!--  -->
+
+        <!-- fenetre high scores -->
+        <div id="highScores">
+            <p id="hightScoresPseudo"></p>
+            <p id="hightScoresPoints"> + 'Points'</p>
+        </div>
+        <!--  -->
+
+        <noscript>
+            <p>Veuillez activer JavaScript</p>
+        </noscript>
+    </body>
+
+</html>

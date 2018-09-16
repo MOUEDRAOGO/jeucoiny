@@ -1,0 +1,76 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+
+
+
+
+
+.sprite-dark-wood-closed {
+    width: 512px;
+    height: 446px;
+    background-position: -1px -1px;
+}
+
+
+
+.sprite-dark-wood-open {
+    width: 486px;
+    height: 519px;
+    background-position: -515px -1px;
+}
+
+
+
+
+
+
+
+.sprite-github {
+    width: 30px;
+    height: 30px;
+    background-position: -1003px -1px;
+}
+
+
+
+.sprite-gmail {
+    width: 30px;
+    height: 30px;
+    background-position: -1035px -1px;
+}
+
+
+
+.sprite-linkedin {
+    width: 30px;
+    height: 30px;
+    background-position: -1067px -1px;
+}
+
+
+
+.sprite-stackoverflow {
+    width: 30px;
+    height: 30px;
+    background-position: -1099px -1px;
+}
+
+
+
+.sprite-tumblr {
+    width: 30px;
+    height: 30px;
+    background-position: -1131px -1px;
+}
+
+
+
+.sprite-twitter {
+    width: 30px;
+    height: 30px;
+    background-position: -1163px -1px;
+}

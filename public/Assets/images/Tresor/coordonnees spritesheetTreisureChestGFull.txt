@@ -1,0 +1,17 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-spritesheetTreisureChestG1 {
+    width: 517px;
+    height: 516px;
+    background-position: -5px -5px;
+}
+
+.sprite-spritesheetTreisureChestG2 {
+    width: 506px;
+    height: 511px;
+    background-position: -532px -5px;
+}
